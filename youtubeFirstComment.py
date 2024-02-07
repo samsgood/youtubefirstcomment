@@ -7,9 +7,9 @@ from googleapiclient.discovery import build
 app = Flask(__name__)
 
 # Variables d'environnement
-CLIENT_SECRETS_FILE = "chemin/vers/votre/fichier/client_secret.json"
+CLIENT_SECRETS_FILE = "oauth2.json"
 WEBHOOK_VERIFICATION_TOKEN = "votre_token_de_verification"
-CHANNEL_ID = "ID_DE_LA_CHAINE_YOUTUBE"
+CHANNEL_ID = "@marouane53Too"
 
 # Créer un objet service YouTube
 youtube = build('youtube', 'v3', credentials=Credentials.from_authorized_user_file(CLIENT_SECRETS_FILE))
